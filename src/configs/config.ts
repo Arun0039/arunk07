@@ -45,29 +45,29 @@ export const siteConfig: {
     type: string;
   };
 } = {
-  baseUrl: 'https://muhammadfiaz.com',
+  baseUrl: 'https://github.com/Arun0039',
   domain: 'muhammadfiaz.com',
-  author: 'Muhammad Fiaz',
-  author_surname: 'Fiaz',
-  titlePrefix: 'Muhammad Fiaz',
-  github_org_name: 'Fiaz Technologies',
+  author: 'Arun K',
+  author_surname: 'K',
+  titlePrefix: 'Arun',
+  github_org_name: 'AppConnect2',
   country: 'India',
   profile_image:
-    'https://avatars.githubusercontent.com/u/75434191?s=400&u=0aa88e4ae941c44425b2be4595cf92b68f578f8a&v=4',
+    'https://avatars.githubusercontent.com/u/101653257?s=400&u=22f0097c861fe1e9d51867cda48e62eb5bec5461&v=4',
   form_id: 'https://formspree.io/f/myzynpbr',
   social: {
     kofi: 'https://ko-fi.com/muhammadfiaz',
     sponsor: 'https://github.com/sponsors/muhammad-fiaz',
-    email: 'contact@muhammadfiaz.com',
+    email: 'arunmechanic7597@gmail.com',
     twitter: '@muhammadfiaz_',
     github: 'muhammad-fiaz',
-    linkedin: 'https://www.linkedin.com/in/muhammad-fiaz-/',
+    linkedin: 'https://www.linkedin.com/in/arun-k-320111149',
     blog: 'https://articles.muhammadfiaz.com',
     medium: 'https://muhammad-fiaz.medium.com',
     dev: 'https://dev.to/muhammadfiaz',
     hashnode: 'https://muhammadfiaz.hashnode.dev',
     discord: 'https://discord.gg/mXMhy2EX',
-    github_organisation: 'https://github.com/FiazTechnologies',
+    github_organisation: 'https://github.com/Arun0039',
     daily_dev: {
       username: 'muhammadfiaz',
       card: 'https://api.daily.dev/devcards/v2/JVyK3ICBzKPdM0rcDj1o4.png?type=wide&r=vde'

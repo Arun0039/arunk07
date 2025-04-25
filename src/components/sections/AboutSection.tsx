@@ -9,6 +9,7 @@ import ContactMe from '@/src/components/content/ContactMe';
 import SupportMe from '@/src/components/content/SupportMe';
 import FAQSection from '@/src/components/sections/FAQSection';
 import SkillsSection from '@/src/components/sections/SkillsSection';
+import CertificatesSection from '@/src/components/sections/CertificatesSection';
 
 const AboutSection = () => {
   return (
@@ -72,6 +73,12 @@ const AboutSection = () => {
         <AnimationContainer customClassName="w-full">
           <SkillsSection />
         </AnimationContainer>
+
+        {/* Certificates Section */}
+        <AnimationContainer customClassName="w-full mt-16">
+          <CertificatesSection />
+        </AnimationContainer>
+
         {/* Contact Section */}
         <AnimationContainer customClassName="w-full mt-16">
           <ContactMe />

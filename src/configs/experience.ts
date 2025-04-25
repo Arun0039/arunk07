@@ -14,62 +14,37 @@ export const experienceEntries: ExperienceEntry[] = [
   {
     title: 'Looking for Job Opportunities | Present',
     description:
-      "Currently seeking job opportunities in **Software Engineering**, **AI**, **Data Science**, and **Full Stack** development. Open to full-time roles, internships, or freelance work. Let's connect!",
+      "Actively seeking opportunities in Quality Assurance Engineering, AI-driven testing, Manual Testing, and Automation Testing. Open to full-time roles, internships, or freelance projects. Let’s connect and build something great together",
     startDate: 'Present',
     endDate: 'Present',
     isActive: true,
     companyUrl: siteConfig.social.linkedin
   },
   {
-    title: 'Fiaz Technologies | Nov. 2023 - Present',
+    title: 'Sprite Software | March 2022 - Present',
     description:
-      'Building developer-first tools at Fiaz Technologies to enhance productivity. Focused on creating innovative Tools that empower developers.',
-    startDate: 'Nov 2023',
+      'Building QA-first tools at Saasly.in to enhance testing efficiency. Focused on creating innovative solutions using Selenium, Playwright, and platforms like Freshworks, Shopify, Zendesk, and Monday.com — empowering quality engineers and streamlining the testing process',
+    startDate: 'Mar 2022',
     endDate: 'Present',
     isActive: true,
     companyUrl: siteConfig.social.github_organisation
   },
   {
-    title: 'Hacktoberfest 2024 | Oct. 2024 - Nov. 2024',
+    title: 'Interlace India | Oct. 2020 - Mar. 2022',
     description:
-      'Participated as a maintainer and content writer in the Hacktoberfest event. Contributed to open-source projects and wrote technical content on platforms such as Medium, Dev.to, and Hashnode.',
-    startDate: 'Oct 2024',
-    endDate: 'Nov 2024',
+      'Worked as a Testing Trainee at Interlace India, contributing to real-time government and enterprise projects. Gained hands-on experience in manual testing, analyzing business workflows, and documenting test cases. Actively collaborated with teams to ensure quality deliverables and process improvements across multiple domains.',
+    startDate: 'Oct 2020',
+    endDate: 'Mar 2022',
     isActive: false,
-    companyUrl: siteConfig.other.hacktoberfest
+    // companyUrl: siteConfig.other.hacktoberfest
   },
   {
-    title: 'CodSoft - Data Science Intern | Sep. 2023 - Oct. 2023',
+    title: 'Indium Software | Jan. 2020 - Jul. 2020',
     description:
-      'Self-paced Data Science Intern where I gained practical experience in data science applications using Python. I also contributed to open-source projects and maintained repositories on GitHub.',
-    startDate: 'Sep 2023',
-    endDate: 'Oct 2023',
-    companyUrl: siteConfig.other.codsoft
+      'Worked as a QA Training at Indium Software, where I gained foundational experience in manual testing. Involved in writing and executing test cases, identifying bugs, and ensuring software quality across client projects. Collaborated with cross-functional teams to understand business requirements and deliver reliable testing outcomes.',
+    startDate: 'Oct 2020',
+    endDate: 'Mar 2022',
+    isActive: false,
+    // companyUrl: siteConfig.other.hacktoberfest
   },
-  {
-    title: 'Hacktoberfest 2023 | Sep. 2023 - Oct. 2023',
-    description:
-      'Participated as a maintainer and content writer in the Hacktoberfest event. Contributed to open-source projects and wrote technical content on platforms such as Medium, Dev.to, and Hashnode.',
-    startDate: 'Sep 2023',
-    endDate: 'Oct 2023',
-    companyUrl: siteConfig.other.hacktoberfest
-  },
-  {
-    title: 'Technical Content Writer | Sep. 2023 - Present',
-    description:
-      'Writing technical content and tutorials on platforms like Medium, Dev.to, and Hashnode. Topics include software development, data science, and open-source contributions.',
-    startDate: 'Sep 2023',
-    endDate: 'Present',
-    isActive: true,
-    companyUrl: siteConfig.baseUrl + '/blog'
-  },
-  {
-    title: 'Open Source Contributor & Maintainer | Dec. 2020 - Present',
-    description:
-      'Actively contributing to and maintaining open-source repositories on GitHub. Focused on building and improving tools for the developer community.',
-    startDate: 'Dec 2020',
-    endDate: 'Present',
-    isActive: true,
-    companyUrl: siteConfig.social.github
-  }
 ];

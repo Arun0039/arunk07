@@ -8,21 +8,21 @@ const LinksMenu = [
     path: '/',
     delay: '150ms'
   },
-  {
-    name: 'About',
-    path: '/about',
-    delay: '175ms'
-  },
+   // {
+     // name: 'About',
+      //path: '/about',
+     // delay: '175ms'
+    //},
   {
     name: 'Projects',
     path: '/projects',
     delay: '200ms'
   },
-  {
-    name: 'Blog',
-    path: '/blog',
-    delay: '225ms'
-  }
+  //{
+    //name: 'Blog',
+   // path: '/blog',
+    //delay: '225ms'
+  //}
 ];
 
 const LinksMenuNav = () => {

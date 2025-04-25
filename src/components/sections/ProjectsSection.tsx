@@ -12,10 +12,67 @@ import Script from 'next/script';
 import { usePathname } from 'next/navigation';
 import SearchInput from '@/src/components/ui/SearchInput';
 
+const projectsList = [
+  {
+    id: "6",
+    title: "Research and Development - Paid Apps",
+    des: "Currently working in Research and Development for paid applications. Analyzed 5 products in the global market, consolidated customer queries into use cases, and conducted market share research. Submitted product reviews to the analysis team to improve sales activity. Successfully introduced 60 apps, with 40 currently generating revenue.",
+    category: "Product Based",
+    repo: "https://github.com/Arun0039/AI-agent-MCP.git",
+    link: "https://github.com/Arun0039/AI-agent-MCP.git",
+    topics: ["Research", "Market Analysis", "Product Development", "Revenue Generation", "Customer Feedback"]
+  },
+  {
+    id: "1",
+    title: "Affigenix",
+    des: "Lab Support Application - Product based application developed at Interlace India. Focused on laboratory management and support systems.",
+    category: "Product Based",
+    repo: "https://github.com/Arun0039/AI-agent-MCP.git",
+    link: "https://github.com/Arun0039/AI-agent-MCP.git",
+    topics: ["Lab Support", "Product Development", "Interlace India"]
+  },
+  {
+    id: "2",
+    title: "IFMIS",
+    des: "Corrosion resistance management system - Product based application developed at Interlace India.",
+    category: "Product Based",
+    repo: "https://github.com/Arun0039/AI-agent-MCP.git",
+    link: "https://github.com/Arun0039/AI-agent-MCP.git",
+    topics: ["Corrosion Management", "Product Development", "Interlace India"]
+  },
+  {
+    id: "3",
+    title: "Government Projects",
+    des: "Worked on multiple central and state government projects including NSIC, SWP, TNEB, CWMSSB, and IFMIS for Mizoram. Role: Test Engineer Trainee - Developed and executed test cases.",
+    category: "Project Based",
+    repo: "https://github.com/Arun0039/AI-agent-MCP.git",
+    link: "https://github.com/Arun0039/AI-agent-MCP.git",
+    topics: ["NSIC", "SWP", "TNEB", "CWMSSB", "IFMIS", "Government Projects", "Test Engineering"]
+  },
+  {
+    id: "4",
+    title: "SaaS Platform Testing",
+    des: "At Spritle Software: Worked on SaaS platforms including Freshworks, Zendesk, Monday.com, Shopify, and Zoho. Developed test plans, strategies, test cases, executed testing, and coordinated with development teams.",
+    category: "Project Based",
+    repo: "https://github.com/Arun0039/AI-agent-MCP.git",
+    link: "https://github.com/Arun0039/AI-agent-MCP.git",
+    topics: ["SaaS", "Freshworks", "Zendesk", "Monday.com", "Shopify", "Zoho", "Test Planning"]
+  },
+  {
+    id: "5",
+    title: "Automation Testing",
+    des: "Developed automated testing scripts using Selenium Java and Playwright JS. Currently working on POC for AI agent development for application scripting.",
+    category: "Project Based",
+    repo: "https://github.com/Arun0039/AI-agent-MCP.git",
+    link: "https://github.com/Arun0039/AI-agent-MCP.git",
+    topics: ["Selenium", "Playwright", "Java", "JavaScript", "Automation Testing", "AI Agent"]
+  }
+];
+
 const ProjectsSection = () => {
   const [projectSearch, setProjectSearch] = useState<string>('');
   const [allProjectsInfo, setAllProjectsInfo] = useState<CardProjectProps[]>(
-    []
+    projectsList
   );
   const [isLoading, setIsLoading] = useState<boolean>(false);
   const [fetchError, setFetchError] = useState<string>(''); // New state for handling fetch errors
@@ -23,31 +80,31 @@ const ProjectsSection = () => {
   const pathname = usePathname(); // Hook to track the current path
 
   // Fetch GitHub repositories when the component mounts or when the search or pathname changes
-  useEffect(() => {
-    const fetchProjects = async () => {
-      setIsLoading(true);
-      setFetchError(''); // Reset error message before fetching
-      try {
-        const response = await fetch(
-          `/api/fetch-projects?search=${projectSearch}`
-        );
-        if (!response.ok) {
-          throw new Error('Failed to fetch repositories');
-        }
-        const data = await response.json();
-        // Ensure data is an array before setting it
-        setAllProjectsInfo(Array.isArray(data) ? data : []);
-      } catch (error) {
-        console.error('Error fetching projects:', error);
-        setFetchError('Failed to fetch projects'); // Set the error message
-        setAllProjectsInfo([]); // Fallback to empty array if an error occurs
-      } finally {
-        setIsLoading(false);
-      }
-    };
+  // useEffect(() => {
+  //   const fetchProjects = async () => {
+  //     setIsLoading(true);
+  //     setFetchError(''); // Reset error message before fetching
+  //     try {
+  //       const response = await fetch(
+  //         `/api/fetch-projects?search=${projectSearch}`
+  //       );
+  //       if (!response.ok) {
+  //         throw new Error('Failed to fetch repositories');
+  //       }
+  //       const data = await response.json();
+  //       // Ensure data is an array before setting it
+  //       setAllProjectsInfo(Array.isArray(data) ? data : []);
+  //     } catch (error) {
+  //       console.error('Error fetching projects:', error);
+  //       setFetchError('Failed to fetch projects'); // Set the error message
+  //       setAllProjectsInfo([]); // Fallback to empty array if an error occurs
+  //     } finally {
+  //       setIsLoading(false);
+  //     }
+  //   };
 
-    fetchProjects();
-  }, [projectSearch, pathname]); // Re-run when either the projectSearch or pathname changes
+  //   fetchProjects();
+  // }, [projectSearch, pathname]); // Re-run when either the projectSearch or pathname changes
 
   // Generate JSON-LD structured data for each individual project
   const generateJsonLdForProject = (project: CardProjectProps) => {
@@ -74,23 +131,6 @@ const ProjectsSection = () => {
       <SectionContainer>
         <div className="w-full flex flex-col gap-6">
           <TitleSectionPageContainer title="Projects" />
-
-          <AnimationContainer customClassName="w-full flex flex-col gap-5 mb-8">
-            <p className="w-full text-base text-black dark:text-white">
-              These are most of the projects I've done since I started
-              programming, some of them are personal projects, freelance, work,
-              practice, or for other situations. If you want to see absolutely
-              all my projects, go to my{' '}
-              <Link
-                href={`https://github.com/${siteConfig.social.github}`}
-                target="_blank"
-                className="underline transition-all ease"
-              >
-                github page
-              </Link>
-              .
-            </p>
-          </AnimationContainer>
 
           {/* Use SearchInput component */}
           <SearchInput

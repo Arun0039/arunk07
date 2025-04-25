@@ -41,13 +41,14 @@ const AuthAvatar = () => {
   return (
     <>
       {!isSignedIn ? (
-        <Button
-          color="primary"
-          onPress={handleSignIn}
-          className="cursor-pointer bg-black text-white dark:bg-white dark:text-black"
-        >
-          Sign In
-        </Button>
+        // <Button
+        //   color="primary"
+        //   onPress={handleSignIn}
+        //   className="cursor-pointer bg-black text-white dark:bg-white dark:text-black"
+        // >
+        //   Sign In
+        // </Button>
+        <div></div>
       ) : (
         <Dropdown>
           <DropdownTrigger>

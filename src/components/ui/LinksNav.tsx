@@ -7,17 +7,17 @@ import { NavItemHeaderAnimation } from '@/src/types';
 
 export const navItemsSelected: { [key: string]: NavItemHeaderAnimation } = {
   '/': {
-    name: 'home'
+    name: 'Home'
   },
-  '/about': {
-    name: 'about'
-  },
+  // '/about': {
+  //   name: 'about'
+  // },
   '/projects': {
-    name: 'projects'
+    name: 'Projects'
   },
-  '/blog': {
-    name: 'blog'
-  }
+  //'/blog': {
+  //  name: 'blog'
+  //}
 };
 
 const LinksNav = () => {

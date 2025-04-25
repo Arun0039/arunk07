@@ -6,12 +6,13 @@ import CurrentTimeLineExp from '../content/CurrentTimeLineExp';
 import Hero from '../content/Hero';
 import AnimationContainer from '../utils/AnimationContainer';
 import SectionContainer from '../utils/SectionContainer';
-import SupportMe from '@/src/components/content/SupportMe';
-import FAQSection from '@/src/components/sections/FAQSection';
-import StatsSection from '@/src/components/sections/StatsSection';
+// import SupportMe from '@/src/components/content/SupportMe';
+// import FAQSection from '@/src/components/sections/FAQSection';
+// import StatsSection from '@/src/components/sections/StatsSection';
 import SkillsSection from '@/src/components/sections/SkillsSection';
-import HolopinBadges from '@/src/components/content/HolopinBadges';
-import DevCard from '@/src/components/content/DevCard';
+import CertificatesSection from '@/src/components/sections/CertificatesSection';
+// import HolopinBadges from '@/src/components/content/HolopinBadges';
+// import DevCard from '@/src/components/content/DevCard';
 
 const HomeSection = () => {
   return (
@@ -40,38 +41,37 @@ const HomeSection = () => {
         <CurrentTimeLineExp />
       </AnimationContainer>
 
-      <AnimationContainer customClassName="w-full mt-16">
-        <DevCard />
-      </AnimationContainer>
-
       {/* Skills Section */}
       <AnimationContainer customClassName="w-full mt-16">
         <SkillsSection />
       </AnimationContainer>
 
-      {/* Skills Section */}
+      {/* Certificates Section */}
       <AnimationContainer customClassName="w-full mt-16">
-        <HolopinBadges />
+        <CertificatesSection />
       </AnimationContainer>
 
+      {/* Skills Section */}
+      {/* Holopin Badges removed */}
+
       {/* Stats Section */}
-      <AnimationContainer customClassName="w-full mt-16">
+      {/* <AnimationContainer customClassName="w-full mt-16">
         <StatsSection />
-      </AnimationContainer>
+      </AnimationContainer> */}
 
       {/* Contact Section */}
       <AnimationContainer customClassName="w-full mt-16">
         <ContactMe />
       </AnimationContainer>
-      {/* Support Me Section */}
-      <AnimationContainer customClassName="w-full mt-16">
+      {/* Support Me Section - Commented out */}
+      {/* <AnimationContainer customClassName="w-full mt-16">
         <SupportMe />
-      </AnimationContainer>
+      </AnimationContainer> */}
 
-      {/* FAQ Section */}
-      <AnimationContainer customClassName="w-full mt-16">
+      {/* FAQ Section - Commented out */}
+      {/* <AnimationContainer customClassName="w-full mt-16">
         <FAQSection />
-      </AnimationContainer>
+      </AnimationContainer> */}
     </SectionContainer>
   );
 };

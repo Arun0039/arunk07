@@ -45,6 +45,21 @@ const ContactMe = () => {
     }
   }, []);
 
+  const handleDownloadResume = () => {
+    // Replace this URL with your actual resume file URL
+    const resumeUrl = 'https://ik.imagekit.io/psxpebqrj/QA%20Resume.pdf?updatedAt=1745572529772';
+    
+    // Create a temporary link element
+    const link = document.createElement('a');
+    link.href = resumeUrl;
+    link.download = 'Arun_QA_Resume.pdf'; // The name that will be used for the downloaded file
+    
+    // Append to body, click, and remove
+    document.body.appendChild(link);
+    link.click();
+    document.body.removeChild(link);
+  };
+
   const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
 
@@ -89,18 +104,31 @@ const ContactMe = () => {
       <SectionHeader
         id="contactme"
         title="Contact Me"
-        content="Fill out the form below to contact me. Please, no spam. I strive to respond to all legitimate inquiries, but please be clear and concise in your message. Whether you have a question about my work, a project collaboration, or just want to connect, feel free to reach out. I look forward to hearing from you!"
+        content="Fill out the form below to get in touch. Please, no spam. I aim to respond to all genuine inquiries, but kindly be clear and concise in your message. Whether you have a question about my QA work, need help with automation, or are interested in a project collaboration, feel free to reach out. I look forward to connecting with you!"
       />
 
       <div className="w-full flex justify-between items-center flex-col mx-auto max-w-screen-xl">
         <div className="w-full flex justify-between items-center flex-col lg:flex-row gap-6 mb-10">
           <div className="w-full rounded-xl border border-gray-800 hover:border-gray-900 bg-white dark:bg-[#080809] p-4 shadow-sm hover:shadow-[0_8px_30px_rgb(0,0,0,0.12)] sm:p-6 transition ease">
-            <h3 className="font-bold text-1xl tracking-tight text-foreground dark:text-white text-start">
-              Email
-            </h3>
-            <p className="text-base mt-2 text-foreground dark:text-white">
-              {siteConfig.social.email}
-            </p>
+            <div className="flex justify-between items-start">
+              <div>
+                <h3 className="font-bold text-1xl tracking-tight text-foreground dark:text-white text-start">
+                  Email
+                </h3>
+                <p className="text-base mt-2 text-foreground dark:text-white">
+                  {siteConfig.social.email}
+                </p>
+              </div>
+              <button
+                onClick={handleDownloadResume}
+                className="inline-flex items-center px-4 py-2 bg-blue-600 hover:bg-blue-700 text-white text-sm font-medium rounded-md shadow-sm transition-colors duration-150 ease-in-out"
+              >
+                <svg className="w-4 h-4 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 10v6m0 0l-3-3m3 3l3-3m2 8H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" />
+                </svg>
+                Download Resume
+              </button>
+            </div>
           </div>
         </div>
 

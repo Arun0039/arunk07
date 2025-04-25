@@ -24,12 +24,14 @@ const SupportMe = () => {
         >
           Sponsor on GitHub <span className="heartbeat-animation">🧡</span>
         </Button>
+        {/* Buy Me A Coffee button commented out
         <Button
           onPress={() => window.open(siteConfig.social.kofi, '_blank')}
           className="bg-[#FF813F] text-white px-4 sm:px-6 text-sm sm:text-base font-medium rounded-lg sm:inline-block transition-all duration-300 transform hover:bg-[#FF5C1F] hover:shadow-lg dark:bg-[#FF4F00] dark:hover:bg-[#D94400]"
         >
           Buy Me A Coffee <span className="heartbeat-animation">☕</span>
         </Button>
+        */}
       </div>
       <p className="text-sm sm:text-lg">Thank you for your support! 🙏</p>
     </section>
