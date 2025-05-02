@@ -15,11 +15,7 @@ export const faqData: FAQItem[] = [
     title: 'Who are you?',
     content: (
       <>
-        Hey there! 👋 I'm Muhammad Fiaz, a Full Stack developer passionate about
-        coding since childhood. I build innovative solutions using a variety of
-        technologies like Next.js, Node.js, Python, TypeScript, Go, Rust,
-        Flutter, and GenAI. I'm also diving into MLOps and always eager to learn
-        new tools and techniques.
+        Hey there! 👋 I'm Arun K (Quality Assurance Engineer) with 5+ years of hands-on experience in Software Testing, working on various products and exploring more technologies.
         <br className="mb-2" />
         For more about me, check out my{' '}
         <Link
@@ -94,7 +90,7 @@ export const faqData: FAQItem[] = [
     title: 'How can I collaborate with you?',
     content: (
       <>
-        You can reach out to me via email or Discord. I’m open to collaboration
+        You can reach out to me via email or Discord. I'm open to collaboration
         on projects or ideas. Feel free to contact me through:
         <ul className="list-disc pl-6 text-black dark:text-white text-sm">
           <li>
