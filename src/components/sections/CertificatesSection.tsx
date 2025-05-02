@@ -16,6 +16,7 @@ interface Certificate {
   imageUrl: string;
 }
 
+const placeholder = '/images/certificates/placeholder.jpg';
 const certificates: Certificate[] = [
   {
     title: 'Learn JMETER from Scratch on Live Apps -Performance Testing',
@@ -24,7 +25,7 @@ const certificates: Certificate[] = [
     hours: '8.5',
     certificateNo: 'UC-7eac7f30-95f7-4d77-9d57-f2c8a3b0f020',
     certificateUrl: 'ude.my/UC-7eac7f30-95f7-4d77-9d57-f2c8a3b0f020',
-    imageUrl: '/images/certificates/Jmeter.jpg'
+    imageUrl: '/images/certificates/jmeter.jpg'
   },
   {
     title: 'Playwright JS/TS Automation Testing from Scratch & Framework',
@@ -33,16 +34,16 @@ const certificates: Certificate[] = [
     hours: '22.5',
     certificateNo: 'UC-79a67e76-9dbe-4124-8ea1-81dc2001d794',
     certificateUrl: 'ude.my/UC-79a67e76-9dbe-4124-8ea1-81dc2001d794',
-    imageUrl: '/images/certificates/PLAYWRIGHT.jpg'
+    imageUrl: '/images/certificates/playwright.jpg'
   },
   {
-    title: 'Selenium with Java - Novice to Ninja + Interview Guide',
+    title: 'Selenium with Java',
     issuer: 'Rahul Shetty',
     date: 'January 15, 2023',
     hours: '30.5',
     certificateNo: 'SEL-JAVA-2023-01',
     certificateUrl: 'ude.my/selenium-java-cert',
-    imageUrl: '/images/certificates/selenium.jpg'
+    imageUrl: '/images/certificates/places.jpg'
   },
   {
     title: 'Software Testing Masterclass',
@@ -51,7 +52,7 @@ const certificates: Certificate[] = [
     hours: '40',
     certificateNo: 'STM-2022-12',
     certificateUrl: 'qa-academy/cert/stm-2022',
-    imageUrl: '/images/certificates/testing.jpg'
+    imageUrl: placeholder
   },
   {
     title: 'Gen AI Agent Development Certification',
@@ -60,7 +61,7 @@ const certificates: Certificate[] = [
     hours: '25',
     certificateNo: 'GENAI-2024-02',
     certificateUrl: 'ai-institute/cert/genai',
-    imageUrl: '/images/certificates/genai.jpg'
+    imageUrl: placeholder
   },
   {
     title: 'RPA Developer Certification',
@@ -69,7 +70,7 @@ const certificates: Certificate[] = [
     hours: '35',
     certificateNo: 'RPA-2023-11',
     certificateUrl: 'uipath/cert/rpa-dev',
-    imageUrl: '/images/certificates/rpa.jpg'
+    imageUrl: placeholder
   },
   {
     title: 'Freshworks Product Certification',
@@ -78,7 +79,7 @@ const certificates: Certificate[] = [
     hours: '20',
     certificateNo: 'FW-PROD-2024-03',
     certificateUrl: 'freshworks/cert/product',
-    imageUrl: '/images/certificates/freshworks-product.jpg'
+    imageUrl: placeholder
   },
   {
     title: 'Freshworks Implementation Certification',
@@ -87,7 +88,7 @@ const certificates: Certificate[] = [
     hours: '25',
     certificateNo: 'FW-IMPL-2024-03',
     certificateUrl: 'freshworks/cert/implementation',
-    imageUrl: '/images/certificates/freshworks-implementation.jpg'
+    imageUrl: placeholder
   },
   {
     title: 'Freshsales Foundation Certification',
@@ -96,7 +97,7 @@ const certificates: Certificate[] = [
     hours: '15',
     certificateNo: 'FW-SALES-2024-03',
     certificateUrl: 'freshworks/cert/freshsales',
-    imageUrl: '/images/certificates/freshsales.jpg'
+    imageUrl: placeholder
   }
 ];
 
