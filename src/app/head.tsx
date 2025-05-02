@@ -48,7 +48,7 @@ const Head = () => {
       <meta property="og:description" content={meta.openGraph.description} />
       <meta property="og:image" content={meta.openGraph.image} />
       <meta name="twitter:card" content={meta.twitter.card} />
-      <meta name="twitter:site" content={meta.twitter.site} />
+      {/* <meta name="twitter:site" content={meta.twitter.site} /> */}
       <meta name="twitter:title" content={meta.twitter.title} />
       <meta name="twitter:description" content={meta.twitter.description} />
       <meta name="twitter:image" content={meta.twitter.image} />
