@@ -46,7 +46,7 @@
     "devicon": "^2.16.0",
     "embla-carousel-react": "^8.5.2",
     "eslint-config-prettier": "^10.0.2",
-    "eslint-plugin-prettier": "^5.2.3",
+    "eslint-plugin-prettier": "^5.4.0",
     "framer-motion": "^12.4.7",
     "graphql-request": "^7.1.2",
     "js-cookie": "^3.0.5",
